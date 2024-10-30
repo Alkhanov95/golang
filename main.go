@@ -2,10 +2,18 @@ package main
 
 import (
 	"fmt"
+	// перепиши на gin
 	"net"
 )
 
+// должны появится два файла с зависимостями go.mod, go.sum
+
 func main() {
+
+	// добавить ручки
+	// getRoutes
+
+	//http://localhost:8080 
 	// Создаем слушающий сервер на порту 8080
 	listener, err := net.Listen("tcp", ":8080")
 	if err != nil {
@@ -24,6 +32,12 @@ func main() {
 		}
 		go handleConnection(conn)
 	}
+}
+
+func getRoutes() *gin.... {
+	// добавить ручки
+	
+	// /hello POST response {"hello": "hi"}
 }
 
 func handleConnection(conn net.Conn) {
